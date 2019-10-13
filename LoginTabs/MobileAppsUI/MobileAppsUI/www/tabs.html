@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Apache Cordova</title>
+    <style>
+        #titleAwesome {
+            font-family: 'Chewy', cursive;
+            font-size: 40px;
+            line-height: 24px;
+            z-index: 33;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="padding pink-50 has-header has-sub-header">
+        <h1>Annemari's MobileAppUI</h1>
+    <div class="header pink sub shadow tab">
+        <button class="icon ion-android-person active" onclick="openTab('tabWelcome')">Welcome</button>
+        <button class="icon ion-android-list" onclick="openTab('tabHome')">Home</button>
+        <button class="icon ion-android-chat" onclick="openTab('tabAbout')">About</button>
+        <button class="icon ion-android-people" onclick="openTab('tabExtra')">Extra</button>
+    </div>
+    <div class="tab-content active" id="tabWelcome">
+        <h2 class="text-strong padding text-pink">Tab Welcome</h2>
+        <p>Information text</p>
+    </div>
+    <div class="tab-content" id="tabHome">
+        <h2 class="text-strong padding text-pink">Tab Home</h2>
+        <p>Info text</p>
+    </div>
+    <div class="tab-content" id="tabAbout">
+        <h2 class="text-strong padding text-pink">Tab About</h2>
+        <p>Info text</p>
+    </div>
+    <div class="tab-content" id="tabExtra">
+        <h2 class="text-strong padding text-pink">Tab Extra</h2>
+        <p>More text</p>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
